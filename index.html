@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Replace city and clinic name in description below -->
+    <meta
+      name="description"
+      content="Trusted dental clinic providing teeth cleaning, root canal, braces, and implants in {{CITY}}. Book your appointment today."
+    />
+    <meta
+      name="keywords"
+      content="dentist, dental clinic, teeth cleaning, root canal, braces, implants, {{CITY}}"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="{{DOCTOR_NAME}}" />
+
+    <!-- Replace with actual clinic name -->
+    <title>{{CLINIC_NAME}} — Dental Care in {{CITY}}</title>
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER & NAV ========== -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <!-- Replace clinic name here -->
+        <a href="#hero" class="logo" aria-label="{{CLINIC_NAME}} Home">
+          <span class="logo-icon" aria-hidden="true">🦷</span>
+          <span class="logo-text">{{CLINIC_NAME}}</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul role="list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Replace phone number here -->
+        <a
+          href="tel:{{PHONE_NUMBER}}"
+          class="btn btn-outline header-cta"
+          aria-label="Call us at {{PHONE_NUMBER}}"
+        >
+          📞 {{PHONE_NUMBER}}
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="main-nav-list"
+        >
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- ========== HERO ========== -->
+      <section id="hero" aria-labelledby="hero-heading">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="hero-eyebrow">Welcome to</p>
+          <!-- Replace clinic name here -->
+          <h1 id="hero-heading">{{CLINIC_NAME}}</h1>
+          <!-- Replace tagline here -->
+          <p class="hero-tagline">
+            Your Smile, Our Passion — Gentle Care You Can Trust
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Book Appointment</a>
+            <a href="#services" class="btn btn-ghost">Our Services</a>
+          </div>
+          <!-- Replace phone number here -->
+          <p class="hero-phone">
+            <span aria-hidden="true">📞</span>
+            <a href="tel:{{PHONE_NUMBER}}">{{PHONE_NUMBER}}</a>
+          </p>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">↓</div>
+      </section>
+
+      <!-- ========== STATS STRIP ========== -->
+      <section class="stats-strip" aria-label="Clinic highlights">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <strong>15+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <strong>5000+</strong>
+            <span>Happy Patients</span>
+          </div>
+          <div class="stat-item">
+            <strong>10+</strong>
+            <span>Services Offered</span>
+          </div>
+          <div class="stat-item">
+            <strong>4.9★</strong>
+            <span>Patient Rating</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== ABOUT ========== -->
+      <section id="about" aria-labelledby="about-heading">
+        <div class="container about-grid">
+          <figure class="about-image">
+            <!-- Replace with actual doctor photo -->
+            <img
+              src="https://placehold.co/480x560/e8f4f0/2a6049?text=Dr.+Photo"
+              alt="Portrait of {{DOCTOR_NAME}}, lead dentist at {{CLINIC_NAME}}"
+              width="480"
+              height="560"
+              loading="lazy"
+            />
+            <figcaption>{{DOCTOR_NAME}} — Lead Dentist</figcaption>
+          </figure>
+
+          <div class="about-text">
+            <p class="section-label">About Us</p>
+            <h2 id="about-heading">Meet {{DOCTOR_NAME}}</h2>
+            <!-- Replace doctor description here -->
+            <p>
+              With over <strong>15 years of experience</strong>, {{DOCTOR_NAME}}
+              has been dedicated to providing compassionate, high-quality dental
+              care to families across {{CITY}}.
+            </p>
+            <p>
+              Our clinic combines modern technology with a gentle approach —
+              ensuring every visit is comfortable, efficient, and stress-free
+              for patients of all ages.
+            </p>
+
+            <ul class="about-credentials" aria-label="Qualifications">
+              <!-- Replace qualifications here -->
+              <li>✅ BDS — Government Dental College, {{CITY}}</li>
+              <li>✅ MDS (Orthodontics) — Mumbai University</li>
+              <li>✅ Member, Indian Dental Association</li>
+              <li>✅ Advanced Implantology Certified</li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary">Meet Us in Person</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SERVICES ========== -->
+      <section
+        id="services"
+        aria-labelledby="services-heading"
+        class="section-alt"
+      >
+        <div class="container">
+          <p class="section-label">What We Offer</p>
+          <h2 id="services-heading">Our Dental Services</h2>
+          <p class="section-subtitle">
+            Comprehensive care for every smile, from routine checkups to
+            advanced procedures.
+          </p>
+
+          <div class="services-grid">
+            <article class="service-card" aria-labelledby="service-cleaning">
+              <div class="service-icon" aria-hidden="true">🪥</div>
+              <h3 id="service-cleaning">Teeth Cleaning</h3>
+              <p>
+                Professional scaling and polishing to remove plaque, tartar, and
+                surface stains for a healthier smile.
+              </p>
+            </article>
+
+            <article class="service-card" aria-labelledby="service-rootcanal">
+              <div class="service-icon" aria-hidden="true">🦷</div>
+              <h3 id="service-rootcanal">Root Canal</h3>
+              <p>
+                Pain-free root canal treatment using modern rotary techniques to
+                save your natural tooth.
+              </p>
+            </article>
+
+            <article class="service-card" aria-labelledby="service-implants">
+              <div class="service-icon" aria-hidden="true">🔩</div>
+              <h3 id="service-implants">Dental Implants</h3>
+              <p>
+                Permanent, natural-looking tooth replacements that restore
+                function and confidence.
+              </p>
+            </article>
+
+            <article class="service-card" aria-labelledby="service-braces">
+              <div class="service-icon" aria-hidden="true">😁</div>
+              <h3 id="service-braces">Braces & Aligners</h3>
+              <p>
+                Metal braces, ceramic braces, and clear aligners to straighten
+                your teeth comfortably.
+              </p>
+            </article>
+
+            <article class="service-card" aria-labelledby="service-extraction">
+              <div class="service-icon" aria-hidden="true">💊</div>
+              <h3 id="service-extraction">Tooth Extraction</h3>
+              <p>
+                Gentle and safe extraction of damaged or wisdom teeth under
+                effective local anaesthesia.
+              </p>
+            </article>
+
+            <article class="service-card" aria-labelledby="service-whitening">
+              <div class="service-icon" aria-hidden="true">✨</div>
+              <h3 id="service-whitening">Teeth Whitening</h3>
+              <p>
+                Professional in-clinic whitening that gives you a noticeably
+                brighter smile in just one visit.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== WHY CHOOSE US ========== -->
+      <section id="why-choose-us" aria-labelledby="why-heading">
+        <div class="container">
+          <p class="section-label">Why Patients Trust Us</p>
+          <h2 id="why-heading">The {{CLINIC_NAME}} Difference</h2>
+
+          <ul class="why-grid" role="list">
+            <li class="why-card">
+              <span class="why-icon" aria-hidden="true">🏥</span>
+              <h3>Modern Equipment</h3>
+              <p>
+                Digital X-rays, laser dentistry, and sterilised instruments for
+                precise, safe treatment.
+              </p>
+            </li>
+            <li class="why-card">
+              <span class="why-icon" aria-hidden="true">💰</span>
+              <h3>Affordable Pricing</h3>
+              <p>
+                Transparent fee structure with no hidden charges. EMI options
+                available.
+              </p>
+            </li>
+            <li class="why-card">
+              <span class="why-icon" aria-hidden="true">🕐</span>
+              <h3>Flexible Hours</h3>
+              <p>
+                Evening and weekend appointments to suit your busy schedule.
+              </p>
+            </li>
+            <li class="why-card">
+              <span class="why-icon" aria-hidden="true">👨‍👩‍👧</span>
+              <h3>Family-Friendly</h3>
+              <p>
+                A warm, welcoming environment for patients of all ages —
+                including children.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== TESTIMONIALS ========== -->
+      <section
+        id="testimonials"
+        aria-labelledby="testimonials-heading"
+        class="section-alt"
+      >
+        <div class="container">
+          <p class="section-label">Patient Reviews</p>
+          <h2 id="testimonials-heading">What Our Patients Say</h2>
+
+          <div class="testimonials-grid">
+            <!-- Replace testimonials here -->
+            <article
+              class="testimonial-card"
+              aria-label="Patient review by Priya S."
+            >
+              <blockquote>
+                <p>
+                  "I was terrified of dentists until I visited {{CLINIC_NAME}}.
+                  The staff made me feel so comfortable. My root canal was
+                  completely painless!"
+                </p>
+              </blockquote>
+              <footer>
+                <cite>— Priya S., {{CITY}}</cite>
+                <span class="stars" aria-label="5 stars">★★★★★</span>
+              </footer>
+            </article>
+
+            <article
+              class="testimonial-card"
+              aria-label="Patient review by Rahul M."
+            >
+              <blockquote>
+                <p>
+                  "Got my braces done here. {{DOCTOR_NAME}} was very thorough in
+                  explaining the process. Results are amazing after 18 months!"
+                </p>
+              </blockquote>
+              <footer>
+                <cite>— Rahul M., {{CITY}}</cite>
+                <span class="stars" aria-label="5 stars">★★★★★</span>
+              </footer>
+            </article>
+
+            <article
+              class="testimonial-card"
+              aria-label="Patient review by Sneha K."
+            >
+              <blockquote>
+                <p>
+                  "Clean clinic, friendly staff, and affordable rates. I bring
+                  my whole family here now. Highly recommend to everyone in
+                  {{CITY}}!"
+                </p>
+              </blockquote>
+              <footer>
+                <cite>— Sneha K., {{CITY}}</cite>
+                <span class="stars" aria-label="5 stars">★★★★★</span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== GALLERY ========== -->
+      <section id="gallery" aria-labelledby="gallery-heading">
+        <div class="container">
+          <p class="section-label">Inside Our Clinic</p>
+          <h2 id="gallery-heading">Gallery</h2>
+          <p class="section-subtitle">
+            A clean, modern, and welcoming space built for your comfort.
+          </p>
+
+          <div class="gallery-grid" role="list">
+            <!-- Replace images here with actual clinic photos -->
+            <figure role="listitem">
+              <img
+                src="https://placehold.co/400x300/d4eee4/2a6049?text=Reception"
+                alt="Reception area of {{CLINIC_NAME}}"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+              <figcaption>Reception Area</figcaption>
+            </figure>
+            <figure role="listitem">
+              <img
+                src="https://placehold.co/400x300/d4eee4/2a6049?text=Treatment+Room"
+                alt="Modern treatment room at {{CLINIC_NAME}}"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+              <figcaption>Treatment Room</figcaption>
+            </figure>
+            <figure role="listitem">
+              <img
+                src="https://placehold.co/400x300/d4eee4/2a6049?text=Equipment"
+                alt="Modern dental equipment"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+              <figcaption>Advanced Equipment</figcaption>
+            </figure>
+            <figure role="listitem">
+              <img
+                src="https://placehold.co/400x300/d4eee4/2a6049?text=Waiting+Area"
+                alt="Comfortable waiting area"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+              <figcaption>Waiting Area</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT ========== -->
+      <section
+        id="contact"
+        aria-labelledby="contact-heading"
+        class="section-alt"
+      >
+        <div class="container contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <p class="section-label">Get In Touch</p>
+            <h2 id="contact-heading">Book an Appointment</h2>
+            <p>
+              We'd love to meet you! Fill in the form or reach us directly on
+              phone or WhatsApp.
+            </p>
+
+            <!-- Replace address details here -->
+            <address>
+              <ul class="contact-details" role="list">
+                <li>
+                  <span aria-hidden="true">📍</span>
+                  <span>{{ADDRESS}}, {{CITY}}</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">📞</span>
+                  <a href="tel:{{PHONE_NUMBER}}">{{PHONE_NUMBER}}</a>
+                </li>
+                <li>
+                  <span aria-hidden="true">✉️</span>
+                  <!-- Replace email here -->
+                  <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+                </li>
+                <li>
+                  <span aria-hidden="true">🕐</span>
+                  <div>
+                    <!-- Replace working hours here -->
+                    <time>Mon – Sat: 9:00 AM – 8:00 PM</time><br />
+                    <time>Sunday: 10:00 AM – 2:00 PM</time>
+                  </div>
+                </li>
+              </ul>
+            </address>
+
+            <!-- Replace WhatsApp number here (no spaces, include country code) -->
+            <a
+              href="https://wa.me/91{{WHATSAPP_NUMBER}}?text=Hello,%20I%20would%20like%20to%20book%20an%20appointment"
+              class="btn btn-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contact us on WhatsApp"
+            >
+              💬 Chat on WhatsApp
+            </a>
+
+            <!-- Google Maps embed — replace src with your actual embed URL -->
+            <div class="map-embed">
+              <iframe
+                title="{{CLINIC_NAME}} location on Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.0!2d73.3!3d17.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjM!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%"
+                height="220"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap">
+            <form
+              class="contact-form"
+              id="appointmentForm"
+              novalidate
+              aria-label="Book appointment form"
+            >
+              <h3>Request an Appointment</h3>
+
+              <div class="form-group">
+                <label for="patientName"
+                  >Your Name <span aria-hidden="true">*</span></label
+                >
+                <input
+                  type="text"
+                  id="patientName"
+                  name="patientName"
+                  placeholder="Rahul Sharma"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="patientPhone"
+                  >Phone Number <span aria-hidden="true">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="patientPhone"
+                  name="patientPhone"
+                  placeholder="+91 98765 43210"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="patientEmail">Email Address</label>
+                <input
+                  type="email"
+                  id="patientEmail"
+                  name="patientEmail"
+                  placeholder="rahul@email.com"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Required</label>
+                <select id="service" name="service">
+                  <option value="">— Select a service —</option>
+                  <option value="cleaning">Teeth Cleaning</option>
+                  <option value="rootcanal">Root Canal</option>
+                  <option value="implants">Dental Implants</option>
+                  <option value="braces">Braces / Aligners</option>
+                  <option value="extraction">Tooth Extraction</option>
+                  <option value="whitening">Teeth Whitening</option>
+                  <option value="other">Other / General Checkup</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Additional Notes</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about your concern or preferred appointment time..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Request
+              </button>
+              <p
+                class="form-note"
+                id="form-status"
+                role="alert"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <!-- Replace clinic name here -->
+          <span class="logo-text">{{CLINIC_NAME}}</span>
+          <p>Caring for your smile in {{CITY}} since {{YEAR}}.</p>
+          <!-- Replace address here -->
+          <address>{{ADDRESS}}, {{CITY}}</address>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Quick Links</h4>
+          <ul role="list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <!-- Replace contact details here -->
+          <p><a href="tel:{{PHONE_NUMBER}}">{{PHONE_NUMBER}}</a></p>
+          <p><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+          <p>
+            <a
+              href="https://wa.me/91{{WHATSAPP_NUMBER}}"
+              target="_blank"
+              rel="noopener noreferrer"
+              >WhatsApp Us</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            © <span id="currentYear"></span> {{CLINIC_NAME}}. All rights
+            reserved.
+          </p>
+          <p class="demo-notice">
+            ⚠️ This is a sample website created for demonstration purposes.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
